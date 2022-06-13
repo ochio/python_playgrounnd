@@ -1,13 +1,10 @@
 import numpy as np
-A = np.array([1, 2, 3, 4])
-print(A)
+X = np.array([1, 2])
+print(X.shape)
 
-print(np.ndim(A))
+W = np.array([[1, 3, 5], [2, 4, 6]])
+print(W)
+print(W.shape)
 
-print(A.shape)
-print(A.shape[0])
-
-B = np.array([[1, 3], [3, 4], [5, 6]])
-print(B)
-print(np.ndim(B))
-print(B.shape[0])
+Y = np.dot(X, W)
+print(Y)
