@@ -45,7 +45,7 @@ class TwoLayerNet:
     # x: 入力データ t:教師データ
 
     def numerical_gradient(self, x, t):
-        def loss_W(W): return self.loss(x, t)
+        loss_W = lambda W: self.loss(x, t)
 
         grads = {}
         grads["W1"] = numerical_gradient(loss_W, self.params["W1"])
